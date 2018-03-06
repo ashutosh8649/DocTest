@@ -1,0 +1,21 @@
+{
+  "spell": [
+    {
+      "correct_words_count": 22,
+      "incorrect_words_count": 0
+    }
+  ],
+  "pos": [
+    {
+      "nouns_count": 6,
+      "verbs_count": 4,
+      "adjectives_count": 2,
+      "adverbs_count": 0
+    }
+  ],
+  "eval": [
+    {
+      "percentage": 70
+    }
+  ]
+}
