@@ -125,7 +125,6 @@ for(var i=0;i<newString.length;i++)
 }
 console.log("no of key matched "+key_match_count)
 
-
 percentage=(key_match_count*100)/(newString.length);
 console.log("percentage :"+percentage)
 
@@ -133,10 +132,15 @@ console.log("percentage :"+percentage)
     				
  					spell:[{"correct_words_count": correct,
  					 		"incorrect_words_count": incorrect}],
- 					pos:[{"nouns_count":tar_nouns_count,
- 					 	 "verbs_count":tar_verbs_count,
- 					 	 "adjectives_count":tar_adjectives_count,
- 					 	 "adverbs_count":tar_adverbs_count,
+ 					pos:[{
+ 						"base_nouns_count":base_nouns_count,
+ 					 	 "base_verbs_count":base_verbs_count,
+ 					 	 "base_adjectives_count":base_adjectives_count,
+ 					 	 "base_adverbs_count":base_adverbs_count,
+ 						"tar_nouns_count":tar_nouns_count,
+ 					 	 "tar_verbs_count":tar_verbs_count,
+ 					 	 "tar_adjectives_count":tar_adjectives_count,
+ 					 	 "tar_adverbs_count":tar_adverbs_count
  					 	}],	 
  					eval:[{"percentage":percentage}]
  					
@@ -150,6 +154,7 @@ fs.writeFile('data.json', json, 'utf8', (err)=>{
 		console.log("Error");
 		return;
 	}
+	else
 	console.log("success!");
 })
 

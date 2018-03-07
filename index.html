@@ -8,17 +8,19 @@
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower" rel="stylesheet">
+		  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower|Nanum+Gothic" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" type="text/javascript"></script>
 </head>
 <body>
-	<center><button onclick="getData()" id="btd">Evaluate the Document</button></center>
+	<center><button onClick="getData()" id="btd">Evaluate the Document</button></center>
 		<div class="row">
 			<div class="col-sm-4">
 				<div id="base">
-					<strong>Details of Standard document:</strong>
+					<strong>Details of Base document:</strong>
 					<div id="base_wc"></div>
-					<p id="correct_words_count"></p>
-					<p id="incorrect_words_count"></p>
 					<p></p>
 					<p id="base_nouns_count"></p>
 					<p id="base_verbs_count"></p>
@@ -27,23 +29,28 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div id="target">
+				<div id="tar">
 					<strong>Details of Target document:</strong>
-					<div id="wc"></div>
-					<div id="mc"></div>
-					<div id="nc"></div>
-					<div id="vc"></div>
-					<div id="ac"></div>
+					<p> </p>
+					<div id="tar_wc"></div>
+					<p id="correct_words_count"></p>
+					<p id="incorrect_words_count"></p>
+					<p></p>
+					<p id="tar_nouns_count"></p>
+					<p id="tar_verbs_count"></p>
+					<p id="tar_adjectives_count"></p>
+					<p id="tar_adverbs_count"></p>
 				</div>
 			</div>
 			<div class="col-sm-4">
 			<div id="eval">
 					<strong>Marks Percentage:</strong>
-			<p id="percent"></p>
+					<p> </p>
+			<p id="percentage"></p>
 			</div>
 			</div>
 		</div>
 
-<script src="index.js" type="text/javascript"></script>
+
 </body>
 </html>
